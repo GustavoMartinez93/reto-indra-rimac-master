@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/reto-indra-rimac-master/static/css/main.f43e769f.css",
+    "main.js": "/reto-indra-rimac-master/static/js/main.9ef9174e.js",
+    "static/js/453.3517a28b.chunk.js": "/reto-indra-rimac-master/static/js/453.3517a28b.chunk.js",
+    "static/media/Ic-add-user-light.svg": "/reto-indra-rimac-master/static/media/Ic-add-user-light.554beafb02babf77fecf000a6846c717.svg",
+    "static/media/Ic-rimac.svg": "/reto-indra-rimac-master/static/media/Ic-rimac.22f08250b4497c24279e42d5ecac6c67.svg",
+    "static/media/Ic-protection-light.svg": "/reto-indra-rimac-master/static/media/Ic-protection-light.0e23ab16e35d053e6b2e4ece7b4664f8.svg",
+    "static/media/Ic-home-light.svg": "/reto-indra-rimac-master/static/media/Ic-home-light.955823657d0fba8d55714bd2de442191.svg",
+    "static/media/Ic-phone.svg": "/reto-indra-rimac-master/static/media/Ic-phone.cc5774b93288d455308ace58cb530e9b.svg",
+    "static/media/gl_family.svg": "/reto-indra-rimac-master/static/media/gl_family.ea7ae3eb80537dfcf115ee868f2d56ea.svg",
+    "index.html": "/reto-indra-rimac-master/index.html",
+    "static/media/Icon-button.svg": "/reto-indra-rimac-master/static/media/Icon-button.753d18eb51bbc34abc9fa5cc139a3373.svg",
+    "static/media/Icon-line.svg": "/reto-indra-rimac-master/static/media/Icon-line.535e6e244036c163ef205bd5fc309806.svg",
+    "main.f43e769f.css.map": "/reto-indra-rimac-master/static/css/main.f43e769f.css.map",
+    "main.9ef9174e.js.map": "/reto-indra-rimac-master/static/js/main.9ef9174e.js.map",
+    "453.3517a28b.chunk.js.map": "/reto-indra-rimac-master/static/js/453.3517a28b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f43e769f.css",
+    "static/js/main.9ef9174e.js"
+  ]
+}
