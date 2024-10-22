@@ -1,0 +1,111 @@
+.login-page{
+    max-width: 1360px;
+    padding: 20px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  
+    .form-container {
+      display: flex;
+  
+      .form-image {
+        flex: 1;
+        img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 10px;
+        }
+      }
+  
+      .form-content {
+        flex: 1;
+        padding: 40px 80px;
+  
+        .multi{
+          background-color: #00FF7F;
+        }
+  
+        h2 {
+          font-size: 32px;
+          font-weight: 700;
+          line-height: 40px;
+          text-align: left;      
+        }
+  
+        label {
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 20px;
+          letter-spacing: 0.20000000298023224px;
+          text-align: left;
+          margin-bottom: 16px;
+        }
+  
+        form {
+          display: flex;
+          flex-direction: column;
+          margin: 32px 0;
+  
+          div {
+            margin-bottom: 10px;
+            display: flex;
+            width: 352px; 
+          }
+  
+          label {
+            margin-bottom: 5px;
+            color: #666;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: 0.20000000298023224px;
+            text-align: left;
+          }
+  
+          input[type='text']{
+            width: 352px; 
+            height: 56px;
+            padding: 8px 16px;
+            gap: 8px;
+            border-radius: 0;
+            border: 1px solid #ccc; 
+            opacity: 1;
+          }
+  
+          select {
+            width: 120px;
+            height: 73px;
+            padding: 8px 16px;
+            gap: 8px;
+            border-radius: 0;
+            border: 1px solid #ccc;
+            opacity: 1;
+          }
+  
+          input[type='checkbox'] {
+            margin-right: 10px;
+          }
+  
+          .error {
+            color: red;
+            margin-bottom: 10px;
+          }
+  
+          button {
+            width: 195px;
+            height: 64px;
+            padding: 10px;
+            background-color: #03050F;
+            color: #fff;
+            border: none;
+            border-radius: 40px;
+            cursor: pointer;
+  
+            &:hover {
+              background-color: #333;
+            }
+          }
+        }
+      }
+    }
+  }
