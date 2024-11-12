@@ -45,7 +45,7 @@ const Summary = () => {
                 </div>
                 <div className={styles['summary__payment-info']}>
                 <p><strong>Responsable de pago:</strong></p>
-                <p>DNI: </p>
+                <p>DNI:{`${userData.documento}`} </p>
                 <p>Celular: </p>
                 </div>
 

@@ -4,6 +4,10 @@
     margin: auto;
     justify-content: center;
     align-items: center;
+
+    @media only screen and (max-width: 768px) {
+      padding: 0;
+    }
   
     .form-container {
       display: flex;
@@ -11,20 +15,55 @@
       .form-image {
         flex: 1;
         img {
+          display: inline;
           max-width: 100%;
           height: auto;
           border-radius: 10px;
+
+          @media only screen and (max-width: 768px) {
+            display: none;
+          }
         }
       }
   
       .form-content {
         flex: 1;
         padding: 40px 80px;
-  
-        .multi{
-          background-color: #00FF7F;
+
+        .description{
+          border-top: none;
+        }
+
+        @media only screen and (max-width: 768px) {
+          padding: 8px;
+
+          .description{
+            border-top: solid 1px #666;
+            margin: 32px 0;
+            padding-top: 16px;
+          }
         }
   
+        .title-content{
+          display: flex;
+
+          .subtitle-content{
+            flex: 1;
+            .multi{
+              background-color: #00FF7F;
+            }
+          }
+          img{
+            display: none;
+            flex: 1;
+            width: 20%;
+            @media only screen and (max-width: 768px) {
+              display: inline;
+              padding: auto;
+            }
+          }
+        }
+
         h2 {
           font-size: 32px;
           font-weight: 700;
@@ -89,6 +128,11 @@
           .error {
             color: red;
             margin-bottom: 10px;
+          }
+
+          .terms{
+            text-decoration: underline;
+            padding: 16px 0;
           }
   
           button {

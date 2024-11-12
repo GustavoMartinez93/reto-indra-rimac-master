@@ -12,6 +12,10 @@
         background-color: #EDEFFC;
         margin-bottom: 48px;
 
+        @media only screen and (max-width: 768px) {
+          display: none;
+        }
+
         .numberStepSelected {
             background-color: #4F4FFF;
             width: 24px;
@@ -57,9 +61,22 @@
         font-size: 18px;
         margin-bottom: 20px;
         cursor: pointer;
-    
-        span{
+
+        .back-text{
           margin-left: 8px;
+          @media only screen and (max-width: 768px) {
+            display: none;
+          }
+        }
+
+        .step-text{
+          display: none;
+          color: #000;
+          @media only screen and (max-width: 768px) {
+            display: inline;
+            font-size: 12px;
+            margin-left: 16px;
+          }
         }
       }
   
@@ -68,6 +85,10 @@
       margin-bottom: 10px;
       text-align-last: center;
       font-size: 40px;
+
+      @media only screen and (max-width: 768px) {
+        text-align-last: left;
+      }
     }
   
     p {
@@ -77,13 +98,20 @@
 
     .plans-page-text{
         text-align: center;
+
+        @media only screen and (max-width: 768px) {
+          text-align: left;
+        }
     }
   
     .plan-selection {
       display: flex;
       justify-content: space-between;
       margin-bottom: 20px;
-      
+
+      @media only screen and (max-width: 768px) {
+        display: inline;
+      }
   
       .plan-option {
         flex: 1;
@@ -93,6 +121,10 @@
         cursor: pointer;
         transition: background-color 0.2s;
         margin: 0 80px;
+
+        @media only screen and (max-width: 768px) {
+          margin: 16px 0;
+        }
   
         &:hover {
           background-color: #f0f8ff;
@@ -117,6 +149,11 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 20px;
+
+      @media only screen and (max-width: 768px) {
+        display: flex;
+        overflow: auto;
+      }
   
       .plan-card {
         border: 1px solid #ddd;
@@ -128,6 +165,21 @@
         .title {
             display: flex;
             justify-content: space-between;
+        }
+
+        .title-cost{
+          color: #7981B2;
+          font-size: 12px;
+        }
+
+        .text-before{
+          color: #7981B2;
+          text-decoration: line-through;
+          font-size: 14px;
+        }
+
+        .text-cost{
+          font-size: 20px;
         }
 
         ul {

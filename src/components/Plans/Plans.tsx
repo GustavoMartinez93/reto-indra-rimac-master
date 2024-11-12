@@ -16,6 +16,7 @@ interface Plan {
   price: number;
   description: string[];
   age: string;
+  priceBefore: number;
 }
 
 const Plans = () => {
@@ -48,6 +49,7 @@ const Plans = () => {
         if(option === 2){
             plansDataFilter = plansData.list.map((plan: Plan) => ({
                 ...plan,
+                priceBefore: plan.price,
                 price: parseFloat((plan.price * 0.95).toFixed(2))
               }));
         }else{
@@ -87,7 +89,8 @@ const Plans = () => {
         </div>
         <button className={styles['back-button']} onClick={() => navigate(-1)}>
             <MyIcon className="my-icon" />
-            <span>Volver</span>
+            <span className={styles['back-text']}>Volver</span>
+            <span className={styles['step-text']}><strong>PASO 1 DE 2</strong></span>
         </button>
         <h2>{userData?.name}, ¿Para quién deseas cotizar?</h2>
         <p className={styles['plans-page-text']}>Selecciona la opción que se ajuste más a tus necesidades.</p>
@@ -122,8 +125,9 @@ const Plans = () => {
                     <h3>{plan.name}</h3>
                     <HomeIcon></HomeIcon>
                 </div>
-                <p><strong>COSTO DEL PLAN</strong></p>
-                <p> ${plan.price} al mes</p>
+                <p className={styles['title-cost']}><strong>COSTO DEL PLAN</strong></p>
+                {plan.priceBefore && <p className={styles['text-before']}> ${plan.priceBefore} antes</p>}
+                <p className={styles['text-cost']}><strong> ${plan.price} al mes</strong></p>
                 <ul>
                     {plan.description.map((item, idx) => (
                         <li key={idx}>{item}</li>
